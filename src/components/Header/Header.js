@@ -1,10 +1,10 @@
-
+import styles from "./Header.module.scss";
 
 const Header = (props) => {
  const name = props.name || 'App';
  const links = props.links || [{link:"", label: "Link"}];
     return (
-        <header>
+        <header className={styles.header}>
             <h1> {name}</h1>
             <nav>
                 <ul>
