@@ -1,8 +1,8 @@
-import { formatDistance } from "date-fns";
-import { it } from "date-fns/locale";
+/*import { formatDistance } from "date-fns";
+import { it } from "date-fns/locale";*/
 import {Time} from "../../components/Time";
 import styles from "./MessagePreview.module.scss";
-console.log(formatDistance);
+//console.log(formatDistance);
 
 const MessagePreview = (props) => {
   const data = props.data || {

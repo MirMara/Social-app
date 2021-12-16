@@ -13,8 +13,8 @@ const posts = [];
 
 const Home = () => {
  const [friendsPreview, setFriendsPreview] = useState(friends);
- const [allPosts, setAllPosts] = useState(friends);
- const [messagesPreview, setMessagesPreview] = useState(friends); 
+ const [allPosts, setAllPosts] = useState(posts);
+ const [messagesPreview, setMessagesPreview] = useState(messages); 
 // const friendPreview = []; (stessa cosa)
 
 useEffect(() => {
