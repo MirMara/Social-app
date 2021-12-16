@@ -5,23 +5,11 @@ import {Post} from "../../components/Post";
 import {http} from "./../../libs/http";
 import styles from "./home.module.scss";
 
-const friends = [
-    {name: 'Chandler', photo: ""},
-    {name: 'Pippo', photo: "" },
-    {name: 'Geralt', photo: "" },
-];
+const friends = [];
 
-const messages = [
-    { text: 'lorem Ipsum', date: new Date (), sender: "Pippo"},
-    { text: 'Hey', date: new Date (), sender: "Pluto"},
-    { text: 'yooo', date: new Date (), sender: "V"},
-    { text: 'finish the fight', date: new Date (), sender: "MasterChieff"},
-    { text: 'hello', date: new Date (), sender: "Cortona"},
-];
+const messages = [];
 
-const posts = [
-    {author: "User", text:"Oggi ho mangiato cibo buono", date: new Date() },
-];
+const posts = [];
 
 const Home = () => {
  const [friendsPreview, setFriendsPreview] = useState(friends);

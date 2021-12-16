@@ -1,5 +1,6 @@
 import { formatDistance } from "date-fns";
 import { it } from "date-fns/locale";
+import {Time} from "../../components/Time";
 import styles from "./MessagePreview.module.scss";
 console.log(formatDistance);
 
@@ -15,12 +16,7 @@ const MessagePreview = (props) => {
       <h5>{data.sender}</h5>
       <p>
         <small>
-          {formatDistance(
-            new Date(1986, 3, 4, 11, 32, 0),
-            new Date(1986, 3, 4, 10, 32, 0),
-            { addSuffix: true }
-          )}
-          ;
+       <Time relative={data.date} />
         </small>
       </p>
       <p>{data.text}</p>

@@ -1,9 +1,11 @@
-import { formatDistance } from "date-fns";
-import { it } from "date-fns/locale";
+/*import { formatDistance } from "date-fns";
+import { it } from "date-fns/locale";*/
+import {Time} from "../../components/Time";
 import styles from "./Post.module.scss";
 
 const Post = (props) => {
-  const data = props.data || {
+  
+  const data =  props.data || {
     author: "User",
     text: "text",
     date: new Date(),
@@ -16,11 +18,7 @@ const Post = (props) => {
       <h3>{data.author}</h3>
       <p>
         <small>
-          {formatDistance(new Date(data.date), new Date('2024-12-17T03:24:00')), {
-            addSuffix: true,
-            locale: it,
-          }}
-          
+        <Time relative={data.date} />
         </small>
       </p>
       <p>{data.text}</p>
