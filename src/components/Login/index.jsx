@@ -1,11 +1,11 @@
 import { useReducer } from "react";
 import Header from "./../Header/Header.js";
 
-import {styles} from "./Login.module.scss";
+//import {styles} from "./Login.module.scss";
 
 const Login = (props) => {
     const username = props.username || "Miriana";
-    const password = props.password || "******";
+    //const password = props.password || "******";
 
     const INIT_STATE = {
         name: "Faisbrut",
