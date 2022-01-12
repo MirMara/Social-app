@@ -6,7 +6,7 @@ import Footer from "./components/Footer/Footer.js";
 //import Messages from "./pages/Messages";
 //import Friends from "./pages/Friends";
 //import Login from "./components/Login";
-import Loading from "./components/Loading.jsx";
+import Loading from "./components/Loading/Loading.jsx";
 
 //import Home from "./pages/Home";
 
@@ -22,14 +22,16 @@ function App() {
     <div>
       
 
-      <Login />
+     
       
 
-      {<Routes>
+      <Routes>
         <Route path="/" element={
           <Suspense fallback={<Loading />}>
             <Home />
-          </Suspense>} />
+          </Suspense>
+        } 
+        /> 
         <Route path="/new-post" element={
           <Suspense fallback={<Loading />}>
             <NewPost />
@@ -48,7 +50,7 @@ function App() {
           </Suspense>
         } />
 
-      </Routes>} 
+      </Routes>
 
 {/* <Suspense fallback={<Loading />}>
         <Routes>
